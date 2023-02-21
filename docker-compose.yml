@@ -1,0 +1,12 @@
+version: '4.16'
+
+services:
+ bot:
+  build:
+   context: .
+  ports:
+  - 8000
+  volumes:
+  - /app
+  env_file: .env
+  
